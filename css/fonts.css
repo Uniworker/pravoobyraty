@@ -1,0 +1,63 @@
+ @font-face {
+   font-family: "Oswald";
+   font-display: fallback;
+   src: local("Oswald") url("fonts/Oswald-Regular.woff") format("font/woff"),
+     url("fonts/Oswald-Regular.woff2") format("font/woff2")
+ }
+
+ @font-face {
+   font-family: "Oswald";
+   font-weight: 700;
+   font-display: fallback;
+   src: local("Oswald") url("fonts/Oswald-Bold.woff") format("font/woff"),
+     url("fonts/Oswald-Bold.woff2") format("font/woff2")
+ }
+
+ @font-face {
+   font-family: "Roboto";
+   font-display: fallback;
+   src: local("Roboto") url("fonts/Roboto-Regular.woff") format("font/woff"),
+     url("fonts/Roboto-Regular.woff2") format("font/woff2")
+ }
+
+ @font-face {
+   font-family: "Roboto";
+   font-style: italic;
+   font-display: fallback;
+   src: local("Roboto") url("fonts/Roboto-Italic.woff") format("font/woff"),
+     url("fonts/Roboto-Italic.woff2") format("font/woff2")
+ }
+
+ @font-face {
+   font-family: "Roboto";
+   font-weight: 300;
+   font-display: fallback;
+   src: local("Roboto") url("fonts/Roboto-Light.woff") format("font/woff"),
+     url("fonts/Roboto-Light.woff2") format("font/woff2")
+ }
+
+ @font-face {
+   font-family: "Roboto";
+   font-style: italic;
+   font-weight: 300;
+   font-display: fallback;
+   src: local("Roboto") url("fonts/Roboto-LightItalic.woff") format("font/woff"),
+     url("fonts/Roboto-LightItalic.woff2") format("font/woff2")
+ }
+
+ @font-face {
+   font-family: "Roboto";
+   font-weight: 700;
+   font-display: fallback;
+   src: local("Roboto") url("fonts/Roboto-Bold.woff") format("font/woff"),
+     url("fonts/Roboto-Bold.woff2") format("font/woff2")
+ }
+
+ @font-face {
+   font-family: "Roboto";
+   font-style: italic;
+   font-weight: 700;
+   font-display: fallback;
+   src: local("Roboto") url("fonts/Roboto-BoldItalic.woff") format("font/woff"),
+     url("fonts/Roboto-BoldItalic.woff2") format("font/woff2")
+ }
