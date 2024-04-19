@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0024)https://www.iesfukr.org/ -->
 <html lang="en"
   class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
 
@@ -25,14 +24,15 @@
   <title> Новини | ГО «Право Обирати» </title>
 
   <!-- ========== Favicon Icon ========== -->
-  <link rel="shortcut icon" href="https://www.iesfukr.org/assets/img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <!-- ========== Start Stylesheet ========== -->
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/flaticon-set.css" rel="stylesheet">
+  <!--<link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/flaticon-set.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="css/magnific-popup.css" rel="stylesheet">
   <link href="css/owl.carousel.min.css" rel="stylesheet">
   <link href="css/owl.theme.default.min.css" rel="stylesheet">
@@ -51,7 +51,7 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script src="https://www.google-analytics.com/analytics.js" defer></script>
-  <script src="js/vendor/jquery-1.12.4.min.js" defer></script>
+  <script src="js/vendor/jquery-3.7.1.min.js"></script>
   <script src="js/vendor/bootstrap.min.js" defer></script>
   <script src="js/vendor/equal-height.min.js" defer></script>
   <script src="js/vendor/jquery.appear.js.download" defer></script>
@@ -80,24 +80,6 @@
       <!-- Start Navigation -->
       <div class="wrap-sticky" style="height: 100px;">
         <nav class="navbar navbar-default attr-border navbar-sticky bootsnav on no-full sticked">
-
-          <!-- Start Top Search -->
-          <div class="container">
-            <div class="row">
-              <div class="top-search">
-                <div class="input-group">
-                  <form action="https://www.iesfukr.org/#">
-                    <input type="text" name="text" class="form-control" placeholder="Search">
-                    <button type="submit">
-                      <i class="fas fa-search"></i>
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Top Search -->
-
           <div class="container">
 
             <!-- Start Atribute Navigation -->
@@ -120,7 +102,7 @@
             <!-- Start Header Navigation -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                <i class="fa fa-bars"></i>
+                <i class="bi bi-list" style="font-size: 1.5em; color: #0C090A"></i>
               </button>
               <a class="navbar-brand" href="#">
                 <img src="img/logo-dark.png" class="logo" alt="Logo" style="height: 60px;">
@@ -131,42 +113,21 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
               <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle main-menu-link" data-toggle="dropdown">Про нас</a>
-                  <ul class="dropdown-menu animated #">
-                    <li><a href="#">Про нас</a></li>
-                    <li><a href="#">Члени правління</a></li>
-                    <li><a href="#">Члени наглядової ради</a></li>
-                    <li><a href="#">Члени громадської організації</a></li>
-                    <li><a href="#">Репозитарій</a></li>
-
-                  </ul>
-                </li>
-
                 <li>
-                  <a href="#" class="main-menu-link">Стати членом ГО</a>
+                  <a href="about.html" class="main-menu-link">Про нас</a>
                 </li>
                 <li>
-                  <a href="#" class="main-menu-link">Новини</a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScJxKK0v9k7U3IhPsuN9jSwnbBrOLZMMHOM94oQ13F2Av-xkw/viewform?usp=sharing"
+                    class="main-menu-link" target="_blank" rel="noopener">Стати членом ГО</a>
                 </li>
                 <li>
-                  <a href="#" class="main-menu-link">Проекти</a>
+                  <a href="news.html" class="main-menu-link">Новини</a>
+                </li>
+                <li>
+                  <a href="projects.html" class="main-menu-link">Проекти</a>
                 </li>
                 <li class="dropdown">
-                  <a href="#" class="main-menu-link">Заходи</a>
-
-                </li>
-                <li>
-                  <a href="#">Сертифікати</a>
-                </li>
-                <li>
-                  <a href="#">Реквізити</a>
-                </li>
-                <li>
-                  <a href="#">Відгуки</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#">Контакти</a>
+                  <a href="contacts.html">Контакти</a>
                 </li>
               </ul>
             </div>
@@ -177,9 +138,320 @@
 
     </header>
     <!-- End Header -->
-    <div>
-      <h1 style="font-size: 150px; text-align: center;">(;-;)</h1>
+
+      <!-- Start Breadcrumb 
+          ============================================= -->
+      <div class="breadcrumb-area shadow">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="breadcrumb">
+                <li><a href="https://www.iesfukr.org/"><i class="fas fa-home"></i> Головна</a></li>
+      
+      
+      
+                <li class="active"> Новини</li>
+      
+      
+      
+              </ul>
+            </div>
+            <div class="col-md-6">
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Breadcrumb -->
+      <!-- Start Course Details 
+          ============================================= -->
+      <div class="course-details-area default-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row event-area ">
+                <div class="event-items">
+                  <div class="item horizontal col-md-12 "
+                    style="background: #ffffff none repeat scroll 0 0; box-shadow: 0 0 10px #cccccc; padding-left: 0px;">
+                    <div class="col-md-4 thumb bg-cover" style="background-color: #ebecec;">
+                      <img src="./Громадська організація «МІЖНАРОДНА ФУНДАЦІЯ НАУКОВЦІВ ТА ОСВІТЯН»_files/event_18.04.jpg"
+                        style="max-height: 250px;">
+                    </div>
+                    <div class="col-md-8 info" style="box-shadow: none;">
+                      <h4>
+                        <a href="https://www.iesfukr.org/article/264">МІЖНАРОДНЕ ПІДВИЩЕННЯ КВАЛІФІКАЦІЇ (ВЕБІНАР) НА ТЕМУ:
+                          «ОСВІТА ДОРОСЛИХ: ВІТЧИЗНЯНИЙ ТА МІЖНАРОДНИЙ ДОСВІД»</a>
+                      </h4>
+                      <!--  <div class="meta">
+                                      <ul>
+                                          <li><i class="fas fa-calendar-alt"></i> 17.04.2024</li>
+                                         
+                                          <li><i class="fas fa-user"></i> Олег</li>
+                                      </ul>
+                                  </div> -->
+                      <p>
+      
+                      </p>
+                      <div class="text-right">
+                        <a href="https://www.iesfukr.org/article/264" class="btn btn-dark effect btn-sm">
+                          Детальніше <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+      
+      
+                    </div>
+                  </div>
+                  <div class="item horizontal col-md-12 "
+                    style="background: #ffffff none repeat scroll 0 0; box-shadow: 0 0 10px #cccccc; padding-left: 0px;">
+                    <div class="col-md-4 thumb bg-cover" style="background-color: #ebecec;">
+                      <img
+                        src="./Громадська організація «МІЖНАРОДНА ФУНДАЦІЯ НАУКОВЦІВ ТА ОСВІТЯН»_files/event_11.04.2024.jpg"
+                        style="max-height: 250px;">
+                    </div>
+                    <div class="col-md-8 info" style="box-shadow: none;">
+                      <h4>
+                        <a href="https://www.iesfukr.org/article/263">МІЖНАРОДНЕ ПІДВИЩЕННЯ КВАЛІФІКАЦІЇ (ВЕБІНАР) НА ТЕМУ:
+                          «МІЖНАРОДНИЙ ДОСВІД ВИКОРИСТАННЯ ШТУЧНОГО ІНТЕЛЕКТУ В ОСВІТНЬОМУ ПРОЦЕСІ (ЧАСТИНА I) »</a>
+                      </h4>
+                      <!--  <div class="meta">
+                                      <ul>
+                                          <li><i class="fas fa-calendar-alt"></i> 10.04.2024</li>
+                                         
+                                          <li><i class="fas fa-user"></i> Олег</li>
+                                      </ul>
+                                  </div> -->
+                      <p>
+      
+                      </p>
+                      <div class="text-right">
+                        <a href="https://www.iesfukr.org/article/263" class="btn btn-dark effect btn-sm">
+                          Детальніше <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+      
+      
+                    </div>
+                  </div>
+                  <div class="item horizontal col-md-12 "
+                    style="background: #ffffff none repeat scroll 0 0; box-shadow: 0 0 10px #cccccc; padding-left: 0px;">
+                    <div class="col-md-4 thumb bg-cover" style="background-color: #ebecec;">
+                      <img src="./Громадська організація «МІЖНАРОДНА ФУНДАЦІЯ НАУКОВЦІВ ТА ОСВІТЯН»_files/event_03.04.24.jpg"
+                        style="max-height: 250px;">
+                    </div>
+                    <div class="col-md-8 info" style="box-shadow: none;">
+                      <h4>
+                        <a href="https://www.iesfukr.org/article/261">МІЖНАРОДНЕ ПІДВИЩЕННЯ КВАЛІФІКАЦІЇ (ВЕБІНАР) НА ТЕМУ: :
+                          «IНТЕРАКТИВНІ ТЕХНОЛОГІЇ ЗМІШАНОГО НАВЧАННЯ ПРИ ПІДГОТОВЦІ ЗДОБУВАЧІВ ТЕХНІЧНИХ ТА ПРИРОДНИЧИХ
+                          СПЕЦІАЛЬНОСТЕЙ В КРАЇНАХ ЄВРОПЕЙСЬКОГО СОЮЗУ ТА УКРАЇНІ»</a>
+                      </h4>
+                      <!--  <div class="meta">
+                                      <ul>
+                                          <li><i class="fas fa-calendar-alt"></i> 03.04.2024</li>
+                                         
+                                          <li><i class="fas fa-user"></i> Олег</li>
+                                      </ul>
+                                  </div> -->
+                      <p>
+      
+                      </p>
+                      <div class="text-right">
+                        <a href="https://www.iesfukr.org/article/261" class="btn btn-dark effect btn-sm">
+                          Детальніше <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+      
+      
+                    </div>
+                  </div>
+                  <div class="item horizontal col-md-12 "
+                    style="background: #ffffff none repeat scroll 0 0; box-shadow: 0 0 10px #cccccc; padding-left: 0px;">
+                    <div class="col-md-4 thumb bg-cover" style="background-color: #ebecec;">
+                      <img src="./Громадська організація «МІЖНАРОДНА ФУНДАЦІЯ НАУКОВЦІВ ТА ОСВІТЯН»_files/event_21.03.24.jpg"
+                        style="max-height: 250px;">
+                    </div>
+                    <div class="col-md-8 info" style="box-shadow: none;">
+                      <h4>
+                        <a href="https://www.iesfukr.org/article/260">МІЖНАРОДНЕ ПІДВИЩЕННЯ КВАЛІФІКАЦІЇ (ВЕБІНАР) НА ТЕМУ:
+                          «ТРАНСФЕР ОСВІТНІХ ТЕХНОЛОГІЙ В КРАЇНАХ ЄВРОПЕЙСЬКОГО СОЮЗУ ТА УКРАЇНІ»</a>
+                      </h4>
+                      <!--  <div class="meta">
+                                      <ul>
+                                          <li><i class="fas fa-calendar-alt"></i> 21.03.2024</li>
+                                         
+                                          <li><i class="fas fa-user"></i> Олег</li>
+                                      </ul>
+                                  </div> -->
+                      <p>
+      
+                      </p>
+                      <div class="text-right">
+                        <a href="https://www.iesfukr.org/article/260" class="btn btn-dark effect btn-sm">
+                          Детальніше <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+      
+      
+                    </div>
+                  </div>
+                  <div class="item horizontal col-md-12 "
+                    style="background: #ffffff none repeat scroll 0 0; box-shadow: 0 0 10px #cccccc; padding-left: 0px;">
+                    <div class="col-md-4 thumb bg-cover" style="background-color: #ebecec;">
+                      <img src="./Громадська організація «МІЖНАРОДНА ФУНДАЦІЯ НАУКОВЦІВ ТА ОСВІТЯН»_files/event_14.03.24.jpg"
+                        style="max-height: 250px;">
+                    </div>
+                    <div class="col-md-8 info" style="box-shadow: none;">
+                      <h4>
+                        <a href="https://www.iesfukr.org/article/259">Міжнародне дистанційне науково-педагогічне стажування на
+                          тему: «ЦИФРОВА ТА ПСИХОСОЦІАЛЬНА БЕЗПЕКА У ЗАКЛАДАХ ВИЩОЇ ОСВІТИ: МІЖНАРОДНИЙ ДОСВІД»</a>
+                      </h4>
+                      <!--  <div class="meta">
+                                      <ul>
+                                          <li><i class="fas fa-calendar-alt"></i> 13.03.2024</li>
+                                         
+                                          <li><i class="fas fa-user"></i> Олег</li>
+                                      </ul>
+                                  </div> -->
+                      <p>
+      
+                      </p>
+                      <div class="text-right">
+                        <a href="https://www.iesfukr.org/article/259" class="btn btn-dark effect btn-sm">
+                          Детальніше <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+      
+      
+                    </div>
+                  </div>
+                  <div class="item horizontal col-md-12 "
+                    style="background: #ffffff none repeat scroll 0 0; box-shadow: 0 0 10px #cccccc; padding-left: 0px;">
+                    <div class="col-md-4 thumb bg-cover" style="background-color: #ebecec;">
+                      <img
+                        src="./Громадська організація «МІЖНАРОДНА ФУНДАЦІЯ НАУКОВЦІВ ТА ОСВІТЯН»_files/event_11.03.2024.jpg"
+                        style="max-height: 250px;">
+                    </div>
+                    <div class="col-md-8 info" style="box-shadow: none;">
+                      <h4>
+                        <a href="https://www.iesfukr.org/article/258">Міжнародна колективна монографія на тему: «НАУКА ТА
+                          ОСВІТА У ТРЕТЬОМУ ТИСЯЧОЛІТТІ: інформаційні технології, освіта, право, психологія, соціальна сфера,
+                          управління»</a>
+                      </h4>
+                      <!--  <div class="meta">
+                                      <ul>
+                                          <li><i class="fas fa-calendar-alt"></i> 12.03.2024</li>
+                                         
+                                          <li><i class="fas fa-user"></i> Олег</li>
+                                      </ul>
+                                  </div> -->
+                      <p>
+      
+                      </p>
+                      <div class="text-right">
+                        <a href="https://www.iesfukr.org/article/258" class="btn btn-dark effect btn-sm">
+                          Детальніше <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+      
+      
+                    </div>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <nav>
+                      <ul class="pagination">
+                        <li class="page-item disabled" aria-disabled="true" aria-label="« Назад">
+                          <span class="page-link" aria-hidden="true">‹</span>
+                        </li>
+                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                        <li class="page-item"><a class="page-link" href="https://www.iesfukr.org/news?page=2">2</a></li>
+                        <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                        <li class="page-item"><a class="page-link" href="https://www.iesfukr.org/news?page=21">21</a></li>
+                        <li class="page-item"><a class="page-link" href="https://www.iesfukr.org/news?page=22">22</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="https://www.iesfukr.org/news?page=2" rel="next" aria-label="Далі »">›</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+            <!-- Start Sidebar -->
+            <div class="col-md-4">
+      
+            </div>
+            <!-- End Sidebar -->
+          </div>
+        </div>
+      </div>
+      <!-- End Course Details -->
+
+    <!-- Start Pricing Area
+    ============================================= -->
+    <div id="pricing" class="pricing-area default-padding bg-light bottom-less">
+      <div class="container">
+        <div class="row">
+          <div class="pricing pricing-simple text-center">
+            <h2>Як працювати з нами</h2>
+            <div class="col-md-2 equal-height" style="height: 330px;">
+              <div class="pricing-item" style="padding: 0px;">
+                <ul>
+                  <li class="pricing-header">
+                    <i class="fas fa-envelope"></i>
+                  </li>
+                  <li style="padding: 5px;">Звернення в компанію написавши листа на е-мейл: iesfukr@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 equal-height" style="height: 330px;">
+              <div class="pricing-item" style="padding: 0px;">
+                <ul>
+                  <li class="pricing-header">
+                    <i class="fas fa-university"></i>
+                  </li>
+                  <li style="padding: 5px;">Підбір для Вас університету в країнах ЄС. Діагностика Ваших потреб.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 equal-height" style="height: 330px;">
+              <div class="pricing-item" style="padding: 0px;">
+                <ul>
+                  <li class="pricing-header">
+                    <i class="fas fa-graduation-cap"></i>
+                  </li>
+                  <li style="padding: 5px;">Підбір програми навчання та кар’єрне планування в Університетах країн ЄС.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 equal-height" style="height: 330px;">
+              <div class="pricing-item" style="padding: 0px;">
+                <ul>
+                  <li class="pricing-header">
+                    <i class="fas fa-file-alt"></i>
+                  </li>
+                  <li style="padding: 5px;">Допомога в офіційному оформленні документів (запрошення на навчання з
+                    університету в країні ЄС та візовий супровід).</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 equal-height" style="height: 330px;">
+              <div class="pricing-item" style="padding: 0px;">
+                <ul>
+                  <li class="pricing-header">
+                    <i class="fas fa-suitcase-rolling"></i>
+
+                  </li>
+                  <li style="padding: 5px;">Допомога у виїзді на навчання та проживанні в країні ЄС.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- End Pricing Area -->
+
     <!-- Start Footer 
     ============================================= -->
     <footer class="bg-dark default-padding-top text-light">
@@ -201,25 +473,19 @@
                 <h4>Посилання</h4>
                 <ul>
                   <li>
-                    <a href="#">Про нас</a>
+                    <a href="about.html">Про нас</a>
                   </li>
                   <li>
-                    <a href="#">Новини</a>
+                    <a href="joinup.html">Стати членом ГО</a>
                   </li>
                   <li>
-                    <a href="#">Проекти</a>
+                    <a href="news.html">Новини</a>
                   </li>
                   <li>
-                    <a href="#">Заходи</a>
+                    <a href="projects.html">Проекти</a>
                   </li>
                   <li>
-                    <a href="#">Партнери</a>
-                  </li>
-                  <li>
-                    <a href="#">Контакти</a>
-                  </li>
-                  <li>
-                    <a href="#">Репозитарій</a>
+                    <a href="contacts.html">Контакти</a>
                   </li>
                 </ul>
               </div>
@@ -232,15 +498,15 @@
                 <h4>Контакти</h4>
                 <ul>
                   <li>
-                    <i class="fas fa-envelope"></i>
+                    <i class="bi bi-envelope-at" style="color:#ED5C55"></i>
                     <p>Email <span><a href="mailto:go.pravo.obyraty@gmail.com">go.pravo.obyraty@gmail.com</a></span></p>
                   </li>
                   <li>
-                    <i class="fas fa-map"></i>
+                    <i class="bi bi-pin-map" style="color:#ED5C55"></i>
                     <p>Адреса <span>01014 місто Київ, вулиця Звіринецька, 63</span></p>
                   </li>
                   <li>
-                    <i class="fas fa-phone"></i>
+                    <i class="bi bi-telephone" style="color:#ED5C55"></i>
                     <p>Телефон <span><a href="tel:+380735557471">+380 (73) 555 74 71</a></span></p>
                   </li>
 

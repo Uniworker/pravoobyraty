@@ -200,8 +200,8 @@
       autoplay: true,
       items: 1,
       navText: [
-        "<i class='fa fa-angle-left'></i>",
-        "<i class='fa fa-angle-right'></i>"
+        "<i class='bi bi-chevron-left' style='font-size: 1.5em; color: #F8F6F0'></i>",
+        "<i class='bi bi-chevron-right' style='font-size: 1.5em; color: #F8F6F0'></i>"
       ],
     });
 

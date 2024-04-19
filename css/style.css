@@ -1330,11 +1330,6 @@ body, .banner-area,
   color: var(--white);
 }
 
-.about-area .our-features.inc-counter .item .info h4 {
-  margin: 0;
-  text-transform: uppercase;
-}
-
 .about-area .our-features.inc-counter .item .info .timer {
   color: var(--white);
   display: block;
@@ -1344,9 +1339,8 @@ body, .banner-area,
   margin-bottom: 15px;
 }
 
-.about-area .our-features .item .info h4 {
+.about-area .our-features .item .info p {
   font-size: 16px;
-  font-weight: 600;
   margin-bottom: 5px;
   /*text-transform: uppercase;*/
   transition: all 0.35s ease-in-out;
@@ -1387,7 +1381,7 @@ body, .banner-area,
   bottom: 0;
   content: "";
   height: 3px;
-  left: 0;
+  left: 45%;
   position: absolute;
   width: 60px;
   z-index: 1;
