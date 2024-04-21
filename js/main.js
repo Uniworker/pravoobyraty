@@ -5,12 +5,7 @@
     Version         : 1.2
     
 * ================================================================= */
-(function ($) {
-  "use strict";
-
-  $(document).on('ready', function () {
-
-
+$(document).on('ready', function () {
     /* ==================================================
         # Wow Init
      ===============================================*/
@@ -421,5 +416,21 @@
       });
     });
 
-  }); // end document ready function
-})(jQuery); // End jQuery
+    $("#home-button").hide();
+
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+          $('#home-button').fadeIn();
+        } else {
+          $('#home-button').fadeOut();
+        }
+      })
+      $('#home-button a').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 500);
+        return false;
+      });
+    });
+});

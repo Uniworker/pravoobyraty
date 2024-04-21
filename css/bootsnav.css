@@ -892,11 +892,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav .navbar-brand {
-    padding: 20px 15px;
-  }
-
-  nav.navbar.bootsnav.sticked .navbar-brand {
-    padding: 15px;
+    padding: 27px 0;
   }
 
   nav.navbar.bootsnav ul.nav > li.active > a {
@@ -1183,11 +1179,6 @@ nav.navbar.bootsnav {
     margin: 0 auto;
     display: table;
     table-layout: fixed;
-  }
-
-  nav.navbar.bootsnav.menu-center .navbar-header, 
-  nav.navbar.bootsnav.menu-center .attr-nav {
-    position: absolute;
   }
 
   nav.navbar.bootsnav.menu-center .attr-nav {
