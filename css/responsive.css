@@ -720,6 +720,10 @@
     padding-right: 15px;
   }
 
+  .about-area .btn {
+    width: 100%;
+  }
+
 
   /* Top Category */
 
@@ -1225,6 +1229,10 @@
 
   .contact-info-area .maps-form iframe {
     height: 300px;
+  }
+
+  .join-us-area .join-us .right .step::after {
+    left: 50%;
   }
 
   /* Login Register Form */
