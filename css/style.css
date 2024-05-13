@@ -92,6 +92,8 @@ p {
   font-family: var(--font-second);
   line-height: 24px;
   margin: 0 0 1em;
+  max-height: 200px;
+  overflow-y: auto;
   text-transform: none;
   text-wrap: balance;
 }
@@ -612,6 +614,7 @@ a.btn-icon {
 }
 
 .bg-cover {
+  background-color: var(--white);
   background-position: center center;
   background-size: cover;
 }
@@ -1254,6 +1257,8 @@ body, .banner-area,
 
 .banner-area.text-normal p {
   font-size: 16px;
+  max-height: 150px;
+  overflow-y: auto;
 }
 
 .banner-area.text-normal span {
@@ -1338,7 +1343,7 @@ body, .banner-area,
   -webkit-box-shadow: 0 0 10px #cccccc;
   -o-box-shadow: 0 0 10px #cccccc;
   box-shadow: 0 0 10px #cccccc;
-  padding: 50px 30px;
+  padding: 0 32px;
   transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
@@ -1384,10 +1389,6 @@ body, .banner-area,
   margin-left: -25px;
 }
 
-.about-area .about-info {
-  overflow: hidden;
-}
-
 .about-area .about-info .info p:last-of-type {
   margin-bottom: 64px;
 }
@@ -1408,7 +1409,7 @@ body, .banner-area,
 }
 
 .about-area .our-features .item .icon {
-  padding-right: 15px;
+  padding: 25% 24px 25% 0;
 }
 
 .about-area .our-features .item .icon i {
@@ -1497,7 +1498,8 @@ body, .banner-area,
 
 .about-area .info h4 {
   line-height: 30px;
-  margin-bottom: 20px;
+  max-height: 150px;
+  overflow-y: auto;
 }
 
 .our-features .item.mariner i {
@@ -1666,9 +1668,12 @@ body, .banner-area,
 
 .pricing-area .pricing-item .pricing-content {
   border-bottom: 1px solid var(--grey);
-  border-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
   display: block;
   min-height: 100px;
+  max-height: 200px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -2409,6 +2414,8 @@ body, .banner-area,
 .popular-courses-items .thumb .price .caption {
   font-size: 18px;
   padding: 16px;
+  max-height: 150px;
+  overflow-y: auto;
 }
 
 .popular-courses-items .author-info .thumb, 
@@ -4087,6 +4094,8 @@ body, .banner-area,
 .event-area .event-items .item .info h4 {
   font-weight: 600;
   line-height: 1.3;
+  max-height: 150px;
+  overflow-y: auto;
 }
 
 .event-items .item .info h2 a:hover,
@@ -4130,6 +4139,7 @@ body, .banner-area,
 
 .event-area .event-items .item .thumb {
   position: relative;
+  padding: 0;
   text-align: center;
   z-index: 1;
 }
